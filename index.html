@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueBottom</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .active{
+            background-color:blue;
+            color:white;
+            transition:0.3s;
+        }
+        .hide{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container max-w-[1250px] mx-auto h-[100%] flex flex-col">
+        <span class="text-black text-[40px] pt-3 mx-auto font-bold
+        font-mullish">Filter Gallery</span>
+        <div class="filter_button flex justify-center items-center flex-wrap space-x-4 gap-y-3 py-3" >
+            <button data-name="all" class="active px-4 py-2 border rounded text-black font-semibold font-mullish cursor-pointer" >Show all</button>
+            <button data-name="phones" class="px-4 py-2 border rounded   text-black font-semibold font-mullish cursor-pointer">Phones</button>
+            <button data-name="clothes" class="px-4 py-2 border rounded   text-black font-semibold font-mullish cursor-pointer">Clothes</button>
+            <button data-name="shoes" class="px-4 py-2 border rounded   text-black font-semibold font-mullish cursor-pointer">Shoes</button>
+            <button data-name="flowers" class="px-4 py-2 border rounded   text-black  font-semibold font-mullish cursor-pointer">flower</button>
+        </div>
+    
+        <div class="filterable_card w-full h-full flex flex-wrap justify-center gap-5">
+            <div class="card max-w-[340px] h-[400px]" data-name="phones">
+                <img src="https://img.freepik.com/premium-psd/new-iphone-14-pro-3d-smartphone-screen-mockup-template-with-editable-background_349001-518.jpg?size=626&ext=jpg&ga=GA1.1.863191736.1675913407&semt=sph"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Phones</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+                </div>
+        
+
+        <div class="filterable_card   flex flex-wrap gap-3 justify-center">
+            <div class="card max-w-[340px] h-[400px]" data-name="flowers">
+                <img src="https://images.pexels.com/photos/60520/rose-roses-flora-flower-60520.jpeg?auto=compress&cs=tinysrgb&w=600"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Flowers</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+            </div>
+        </div>
+
+        <div class="filterable_card flex flex-wrap gap-4" data-item="item-content">
+            <div class="card max-w-[340px] h-[400px]" data-name="phones">
+                <img src="https://img.freepik.com/premium-psd/new-iphone-14-pro-3d-smartphone-screen-mockup-template-with-editable-background_349001-518.jpg?size=626&ext=jpg&ga=GA1.1.863191736.1675913407&semt=sph"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Phones</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+            </div>
+        </div>
+        <div class="filterable_card flex flex-wrap gap-4" data-item="item-content">
+            <div class="card max-w-[340px] h-[400px]" data-name="flower">
+                <img src="https://images.pexels.com/photos/60520/rose-roses-flora-flower-60520.jpeg?auto=compress&cs=tinysrgb&w=600"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Flowers</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+            </div>
+        </div>
+        <div class="filterable_card flex flex-wrap gap-4" data-item="item-content">
+            <div class="card max-w-[340px] h-[400px]" data-name="shoes">
+                <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Shoes
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+            </div>
+        </div>
+        <div class="filterable_card flex flex-wrap gap-4" data-item="item-content">
+            <div class="card max-w-[340px] h-[400px]" data-name="flowers">
+                <img src="https://images.pexels.com/photos/62332/pexels-photo-62332.jpeg?auto=compress&cs=tinysrgb&w=600"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Flowers</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+            </div>
+        </div>
+        <div class="filterable_card flex flex-wrap gap-4" data-item="item-content">
+            <div class="card max-w-[340px] h-[400px]" data-name="phones">
+                <img src="https://img.freepik.com/premium-psd/new-iphone-14-pro-3d-smartphone-screen-mockup-template-with-editable-background_349001-518.jpg?size=626&ext=jpg&ga=GA1.1.863191736.1675913407&semt=sph"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Phones</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+            </div>
+        </div>
+        <div class="filterable_card flex flex-wrap gap-4" data-item="item-content">
+            <div class="card max-w-[340px] h-[400px]" data-name="phones">
+                <img src="https://img.freepik.com/premium-psd/new-iphone-14-pro-3d-smartphone-screen-mockup-template-with-editable-background_349001-518.jpg?size=626&ext=jpg&ga=GA1.1.863191736.1675913407&semt=sph"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Phones</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+            </div>
+        </div>
+        <div class="filterable_card flex flex-wrap gap-4" data-item="item-content">
+            <div class="card max-w-[340px] h-[400px]" data-name="phones">
+                <img src="https://img.freepik.com/premium-psd/new-iphone-14-pro-3d-smartphone-screen-mockup-template-with-editable-background_349001-518.jpg?size=626&ext=jpg&ga=GA1.1.863191736.1675913407&semt=sph"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Phones</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+            </div>
+        </div>
+        <div class="filterable_card flex flex-wrap gap-4" data-item="item-content">
+            <div class="card max-w-[340px] h-[400px]" data-name="shoes">
+                <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Shoes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+            </div>
+        </div>
+        <div class="filterable_card flex flex-wrap gap-4" data-item="item-content">
+            <div class="card max-w-[340px] h-[400px]" data-name="phones">
+                <img src="https://img.freepik.com/premium-psd/new-iphone-14-pro-3d-smartphone-screen-mockup-template-with-editable-background_349001-518.jpg?size=626&ext=jpg&ga=GA1.1.863191736.1675913407&semt=sph"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Phones</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+            </div>
+        </div>
+
+        <div class="filterable_card flex flex-wrap gap-4" data-item="item-content">
+            <div class="card max-w-[340px] h-[400px]" data-name="clothes">
+                <img src="https://images.pexels.com/photos/2249249/pexels-photo-2249249.jpeg?auto=compress&cs=tinysrgb&w=600"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Clothes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+            </div>
+        </div>
+
+        <div class="filterable_card flex flex-wrap gap-4" data-item="item-content">
+            <div class="card max-w-[340px] h-[400px]" data-name="phones">
+                <img src="https://img.freepik.com/premium-psd/new-iphone-14-pro-3d-smartphone-screen-mockup-template-with-editable-background_349001-518.jpg?size=626&ext=jpg&ga=GA1.1.863191736.1675913407&semt=sph"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Phones</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+            </div>
+        </div>
+
+        <div class="filterable_card flex flex-wrap gap-4" data-item="item-content">
+            <div class="card max-w-[340px] h-[400px]" data-name="Clothes">
+                <img src="https://images.pexels.com/photos/2112651/pexels-photo-2112651.jpeg?auto=compress&cs=tinysrgb&w=600"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Clothes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+            </div>
+        </div>
+
+        <div class="filterable_card flex flex-wrap gap-4" data-item="item-content">
+            <div class="card max-w-[340px] h-[400px]" data-name="clothes">
+                <img src="https://images.pexels.com/photos/1353503/pexels-photo-1353503.jpeg?auto=compress&cs=tinysrgb&w=600"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Clothes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+            </div>
+        </div>
+
+        <div class="filterable_card flex flex-wrap gap-4" data-item="item-content">
+            <div class="card max-w-[340px] h-[400px]" data-name="phones">
+                <img src="https://img.freepik.com/premium-psd/new-iphone-14-pro-3d-smartphone-screen-mockup-template-with-editable-background_349001-518.jpg?size=626&ext=jpg&ga=GA1.1.863191736.1675913407&semt=sph"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Phones</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+            </div>
+        </div>
+
+        <div class="filterable_card flex flex-wrap gap-4" data-item="item-content">
+            <div class="card max-w-[340px] h-[400px]" data-name="phones">
+                <img src="https://img.freepik.com/premium-psd/new-iphone-14-pro-3d-smartphone-screen-mockup-template-with-editable-background_349001-518.jpg?size=626&ext=jpg&ga=GA1.1.863191736.1675913407&semt=sph"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Phones</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+            </div>
+        </div>
+
+        <div class="filterable_card flex flex-wrap gap-4" data-item="item-content">
+            <div class="card max-w-[340px] h-[400px]" data-name="clothes">
+                <img src="https://images.pexels.com/photos/1353503/pexels-photo-1353503.jpeg?auto=compress&cs=tinysrgb&w=600"
+                 alt="" class="w-full h-[70%] ">
+                 <div class="px-3 py-4 bg-gray-50 shadow-xl">
+                    <h2 class="font-bold text-[22px] font-mullish">Clothes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, repudiandae!</p>
+                 </div>
+            </div>
+        </div>
+
+       
+        
+        
+
+        </div>
+
+    </div>
+
+    <script>
+        const filter_button = document.querySelectorAll(".filter_button button");
+        const filterable_cards = document.querySelectorAll(".filterable_card .card");
+
+        const filterCards = e =>{
+            document.querySelector('.active').classList.remove("active");
+            e.target.classList.add("active");
+            
+            filterable_cards.forEach(card =>{
+                card.classList.add("hide");
+                if(card.dataset.name === e.target.dataset.name || e.target.dataset.name ==="all"){
+                    card.classList.remove('hide');
+                }
+            });
+        }
+        filter_button.forEach(function addBg(value){
+            value.addEventListener("click",filterCards);
+        });
+         
+    </script>
+</body>
+</html>
